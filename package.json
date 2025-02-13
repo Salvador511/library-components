@@ -1,5 +1,12 @@
 {
-  "name": "librarycomponents",
+  "name": "@salvador511/librarycomponents",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Salvador511/library-components"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "version": "1.0.0",
   "main": "dist/cjs/index.js",
   "scripts": {
