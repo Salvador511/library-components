@@ -1,4 +1,4 @@
-.btn {
+button {
   display: inline-block;
   padding: 10px 20px;
   font-size: 16px;
@@ -13,15 +13,15 @@
   transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+button:hover {
   background-color: #0056b3;
 }
 
-.btn:active {
+button:active {
   background-color: #004085;
 }
 
-.btn:disabled {
+button:disabled {
   background-color: #c0c0c0;
   cursor: not-allowed;
 }
