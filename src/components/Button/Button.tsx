@@ -1,14 +1,16 @@
 import React from 'react'
 import './Button.css'
 
-export interface ButtonProps {
-  label: string
-}
-
-const Button = (props: ButtonProps) => {
+const Button = ({ label = 'Click Me' }) => {
   return (
-    <button>{props.label}</button>
+    <button>{label}</button>
   )
 }
 
-export default Button
+const Wrapper = (props: any) => {
+  return (
+    <Button {...props} />
+  )
+}
+
+export default Wrapper
