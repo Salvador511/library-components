@@ -38,7 +38,7 @@ export default [
         }
       ],
       "@typescript-eslint/explicit-module-boundary-types": "off",
-      "@typescript-eslint/no-explicit-any": "disable",
+      "@typescript-eslint/no-explicit-any": "off",
 
       // JavaScript
       "no-console": [
