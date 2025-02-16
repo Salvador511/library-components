@@ -5,7 +5,7 @@ interface CloseButtonProps {
   onClick: () => void;
 }
 
-const CloseButton: React.FC<CloseButtonProps> = ({ onClick }) => {
+const CloseBtn: React.FC<CloseButtonProps> = ({ onClick }) => {
   return (
     <button className="close-button" onClick={onClick}>
       Cerrar
@@ -13,4 +13,4 @@ const CloseButton: React.FC<CloseButtonProps> = ({ onClick }) => {
   );
 };
 
-export default CloseButton;
+export default CloseBtn;
