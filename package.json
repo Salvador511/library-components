@@ -12,16 +12,26 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
-    "lint": "eslint 'src/**/*.ts' 'src/**/*.tsx' --fix"
+    "lint": "eslint 'src/**/*.ts' 'src/**/*.tsx' --fix",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.4",
     "@eslint/js": "^9.20.0",
     "@rollup/plugin-commonjs": "^28.0.2",
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-typescript": "^12.1.2",
+    "@storybook/addon-essentials": "^8.5.5",
+    "@storybook/addon-interactions": "^8.5.5",
+    "@storybook/addon-onboarding": "^8.5.5",
+    "@storybook/blocks": "^8.5.5",
+    "@storybook/react": "^8.5.5",
+    "@storybook/react-vite": "^8.5.5",
+    "@storybook/test": "^8.5.5",
     "@types/react": "^19.0.8",
     "@typescript-eslint/eslint-plugin": "^8.24.0",
     "@typescript-eslint/parser": "^8.24.0",
@@ -29,15 +39,22 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-storybook": "^0.11.2",
     "eslint-plugin-vitest-globals": "^1.5.0",
     "react": "^19.0.0",
     "rollup": "^4.34.6",
     "rollup-plugin-dts": "^6.1.1",
     "rollup-plugin-postcss": "^4.0.2",
+    "storybook": "^8.5.5",
     "tslib": "^2.8.1",
     "typescript": "^5.7.3"
   },
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
-  "type": "module"
+  "type": "module",
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
 }
