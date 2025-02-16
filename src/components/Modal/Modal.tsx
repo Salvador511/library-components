@@ -1,5 +1,6 @@
 import React from 'react';
 import './Modal.css';
+import CloseBtn from '../CloseBtn/CloseBtn'; '../CloseBtn/CloseBtn'
 
 interface PatientInfo {
   name: string;
@@ -37,11 +38,9 @@ const Modal: React.FC<ModalProps> = ({ type, data }) => {
   return (
     <div className="modal-overlay">
       <div className="modal-content">
-        <div className="modal-header">
-          <div className="modal-info">
-            <h2>{data.name}</h2>
-            <h3>{type === 'patient' ? (data as PatientInfo).ssn : (data as DoctorInfo).specialty}</h3>
-          </div>
+        <div className="modal-info">
+          <h2>{data.name}</h2>
+          <h3>{type === 'patient' ? (data as PatientInfo).ssn : (data as DoctorInfo).specialty}</h3>
         </div>
 
         <div className="modal-body-container">
@@ -73,9 +72,11 @@ const Modal: React.FC<ModalProps> = ({ type, data }) => {
             )}
           </div>
         </div>
-        <button className="modal-close">Cerrar</button>
+        <div className='btn-container'>
+          <CloseBtn />
+        </div>
       </div>
-    </div>
+    </div >
   );
 };
 
