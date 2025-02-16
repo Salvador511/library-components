@@ -1,6 +1,6 @@
 import React from 'react';
 import './Modal.css';
-import CloseBtn from '../CloseBtn/CloseBtn'; '../CloseBtn/CloseBtn'
+import CloseBtn from '../CloseBtn/CloseBtn';
 
 interface PatientInfo {
   name: string;
@@ -32,9 +32,10 @@ interface DoctorInfo {
 type ModalProps = {
   type: 'patient' | 'doctor';
   data: PatientInfo | DoctorInfo;
+  onClose: () => void;
 };
 
-const Modal: React.FC<ModalProps> = ({ type, data }) => {
+const Modal: React.FC<ModalProps> = ({ type, data, onClose }) => {
   return (
     <div className="modal-overlay">
       <div className="modal-content">
@@ -73,10 +74,10 @@ const Modal: React.FC<ModalProps> = ({ type, data }) => {
           </div>
         </div>
         <div className='btn-container'>
-          <CloseBtn />
+          <CloseBtn onClick={onClose} /> {/* Pasa la función onClose como prop onClick */}
         </div>
       </div>
-    </div >
+    </div>
   );
 };
 

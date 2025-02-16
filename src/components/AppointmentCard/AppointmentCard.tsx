@@ -1,5 +1,5 @@
-import React from 'react';
-import './AppointmentCard.css';
+import React from 'react'
+import './AppointmentCard.css'
 
 export interface AppointmentCardProps {
     doctorName: string;
@@ -33,7 +33,7 @@ const AppointmentCard: React.FC<AppointmentCardProps> = ({
                 <p><strong>Date:</strong> {date} {time}</p>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default AppointmentCard;
+export default AppointmentCard

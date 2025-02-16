@@ -1,5 +1,5 @@
-import React from 'react';
-import './CloseBtn.css';
+import React from 'react'
+import './CloseBtn.css'
 
 interface CloseButtonProps {
   onClick: () => void;
@@ -10,7 +10,7 @@ const CloseBtn: React.FC<CloseButtonProps> = ({ onClick }) => {
     <button className="close-button" onClick={onClick}>
       Cerrar
     </button>
-  );
-};
+  )
+}
 
-export default CloseBtn;
+export default CloseBtn

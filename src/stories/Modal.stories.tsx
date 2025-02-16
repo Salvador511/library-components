@@ -1,5 +1,5 @@
-import { Meta, StoryObj } from '@storybook/react';
-import Modal from '../components/Modal/Modal';
+import { Meta, StoryObj } from '@storybook/react'
+import Modal from '../components/Modal/Modal'
 
 const meta: Meta<typeof Modal> = {
   title: 'Components/Modal',
@@ -27,12 +27,12 @@ const meta: Meta<typeof Modal> = {
       options: ['patient', 'doctor'],
     },
   },
-};
+}
 
-export default meta;
+export default meta
 type Story = StoryObj<typeof Modal>;
 
-export const PatientModal: Story = {};
+export const PatientModal: Story = {}
 
 export const DoctorModal: Story = {
   args: {
@@ -50,4 +50,4 @@ export const DoctorModal: Story = {
       consultationHours: 'Monday to Friday, 9:00 AM - 5:00 PM',
     },
   },
-};
+}

@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import './PatientButton.css';
+import React, { useState } from 'react'
+import './PatientButton.css'
 
 const PatientButton = () => {
-  const [isClicked, setIsClicked] = useState(false);
+  const [isClicked, setIsClicked] = useState(false)
 
   const handleClick = () => {
-    setIsClicked(!isClicked);
-  };
+    setIsClicked(!isClicked)
+  }
 
   return (
     <button 
@@ -15,7 +15,7 @@ const PatientButton = () => {
     >
       <img className='img' src="src/stories/assets/CardioIco.png" alt="Icon" />
     </button>
-  );
-};
+  )
+}
 
-export default PatientButton;
+export default PatientButton
