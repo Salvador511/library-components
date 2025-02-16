@@ -1,7 +1,7 @@
 import React from 'react';
 import './AppointmentCard.css';
 
-interface AppointmentCardProps {
+export interface AppointmentCardProps {
     doctorName: string;
     speciality: string;
     location: string;
