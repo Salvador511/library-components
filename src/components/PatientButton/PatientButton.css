@@ -1,0 +1,19 @@
+.button {
+  width: 40px;
+  height: 40px;
+  background-color: #175699;
+  border-radius: 100%;
+  cursor: pointer;
+  justify-items: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.button.clicked {
+  background-color: #7CA0D0; /* Cambia al color que desees */
+}
+
+.img {
+  width: 24px;
+  height: 24px;
+}
