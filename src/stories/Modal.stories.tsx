@@ -8,7 +8,7 @@ const meta: Meta<typeof Modal> = {
     type: 'patient',
     data: {
       name: 'Brayan Prieto Lozoya',
-      ssn: '123-45-6789',
+      ssn: '# 123-45-6789',
       dateOfBirth: '09/17/2002',
       age: 23,
       sex: 'Male',

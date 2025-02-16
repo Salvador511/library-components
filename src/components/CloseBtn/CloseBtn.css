@@ -1,0 +1,21 @@
+.close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #175699;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 15px;
+  width: 165px;
+  height: 32px;
+}
+
+.close-button:hover {
+  background: #0056b3;
+}
