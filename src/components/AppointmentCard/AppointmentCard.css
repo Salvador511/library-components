@@ -1,0 +1,33 @@
+.appointment-card {
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+}
+
+.card-header {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.card-body {
+    background-color: #e0e0e0;
+    padding: 15px;
+}
+
+.card-body p {
+    margin: 5px 0;
+}
+
+.card-footer {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
