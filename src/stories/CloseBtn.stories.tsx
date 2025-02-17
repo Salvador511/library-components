@@ -1,5 +1,5 @@
-import { Meta, StoryObj } from '@storybook/react';
-import CloseButton from '../components/CloseBtn/CloseBtn';
+import { Meta, StoryObj } from '@storybook/react'
+import CloseButton from '../components/CloseBtn/CloseBtn'
 
 const meta: Meta<typeof CloseButton> = {
   title: 'Components/CloseButton',
@@ -12,15 +12,18 @@ const meta: Meta<typeof CloseButton> = {
       action: 'clicked',
     },
   },
-};
+}
 
-export default meta;
+export default meta
 type Story = StoryObj<typeof CloseButton>;
 
-export const Default: Story = {};
+export const Default: Story = {}
 
 export const WithCustomClick: Story = {
   args: {
-    onClick: () => alert('Botón de cierre clickeado'),
+    onClick: () => {
+      // eslint-disable-next-line no-undef
+      alert('Botón de cierre clickeado')
+    },
   },
-};
+}

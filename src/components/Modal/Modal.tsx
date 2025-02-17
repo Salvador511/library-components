@@ -1,6 +1,6 @@
-import React from 'react';
-import './Modal.css';
-import CloseBtn from '../CloseBtn/CloseBtn';
+import React from 'react'
+import './Modal.css'
+import CloseBtn from '../CloseBtn/CloseBtn'
 
 interface PatientInfo {
   name: string;
@@ -78,7 +78,7 @@ const Modal: React.FC<ModalProps> = ({ type, data, onClose }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Modal;
+export default Modal
